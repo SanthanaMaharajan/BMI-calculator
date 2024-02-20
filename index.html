@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="images/bmi_01.png" alt="">
+            </div>
+            <div class="col col2">
+                    <h1 class="form-head">BMI CALCULATOR</h1>
+                <form id="bmi-form">
+                    <div class="age-container">
+                        <label for="age">Age:</label>
+                        <input type="text" name="age" id="age"  autocomplete="off">
+                    </div>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="male" value="male" >
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female" >
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="input-container">
+                        <label for="height">Height (cm):</label>
+                        <input type="text" id="height" name="height"  autocomplete="off">
+                        <label for="weight">Weight (kg):</label>
+                        <input type="text" id="weight" name="weight"  autocomplete="off">
+                    </div>
+                    <div class="button-container">
+                        <input id="button-1" type="button" value="Calculate BMI!">
+                        <button id="button-2" type="reset">Reset</button>
+                    </div>
+                </form>
+                <div class="msg-container">
+                    <h1>Your BMI is:</h1>
+                    <p id="bmiValue">00.00</p>
+                    <h3 id="status">Normal weight</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
